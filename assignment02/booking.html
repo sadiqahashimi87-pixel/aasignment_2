@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Book movie tickets with CineVerse.">
+
+    <title>Book Tickets | CineVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Navigation -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">CineVerse</a>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+                <li><a href="booking.html" aria-current="page">Book Tickets</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="section-container">
+
+            <div class="form-container">
+
+                <h1>Book Your Movie Tickets</h1>
+
+                <p>
+                    Choose your favourite movie, select your tickets
+                    and plan your next cinema experience.
+                </p>
+
+                <form id="bookingForm" novalidate>
+
+                    <!-- Select Movie -->
+                    <div class="form-group">
+
+                        <label for="movie">Choose a Movie</label>
+
+                        <select id="movie" name="movie" required>
+
+                            <option value="">-- Select a movie --</option>
+
+                            <option value="Saiyaara" data-price="22">
+                                Saiyaara
+                            </option>
+
+                            <option value="3 Idiots" data-price="22">
+                                3 Idiots
+                            </option>
+
+                            <option value="Harry Potter and the Philosopher's Stone" data-price="22">
+                                Harry Potter and the Philosopher's Stone
+                            </option>
+
+                            <option value="Aashiqui 2" data-price="22">
+                                Aashiqui 2
+                            </option>
+
+                            <option value="How to Train Your Dragon" data-price="22">
+                                How to Train Your Dragon
+                            </option>
+
+                            <option value="Spider-Man: Brand New Day" data-price="22">
+                                Spider-Man: Brand New Day
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Select Date -->
+                    <div class="form-group">
+
+                        <label for="bookingDate">Choose a Date</label>
+
+                        <input
+                            type="date"
+                            id="bookingDate"
+                            name="bookingDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Select Session -->
+                    <div class="form-group">
+
+                        <label for="session">Choose a Session</label>
+
+                        <select id="session" name="session" required>
+
+                            <option value="">-- Select a session --</option>
+
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Number of Tickets -->
+                    <div class="form-group">
+
+                        <label for="ticketQuantity">Number of Tickets</label>
+
+                        <input
+                            type="number"
+                            id="ticketQuantity"
+                            name="ticketQuantity"
+                            min="1"
+                            max="10"
+                            value="1"
+                            required
+                        >
+
+                        <small>You can book between 1 and 10 tickets.</small>
+
+                    </div>
+
+
+                    <!-- Ticket Price -->
+                    <div class="form-group">
+
+                        <p>
+                            Price per ticket:
+                            <strong>$22.00 AUD</strong>
+                        </p>
+
+                        <p>
+                            Total price:
+                            <strong id="totalPrice">$22.00 AUD</strong>
+                        </p>
+
+                    </div>
+
+
+                    <!-- Customer Details -->
+                    <h2>Your Details</h2>
+
+                    <div class="form-group">
+
+                        <label for="customerName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            name="customerName"
+                            autocomplete="name"
+                            required
+                            minlength="2"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customerEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            name="customerEmail"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Payment Method -->
+                    <h2>Payment Method</h2>
+
+                    <div class="form-group">
+
+                        <label for="paymentMethod">Choose Payment Method</label>
+
+                        <select
+                            id="paymentMethod"
+                            name="paymentMethod"
+                            required
+                        >
+
+                            <option value="">-- Select payment method --</option>
+                            <option value="card">Credit or Debit Card (Demo)</option>
+                            <option value="paypal">PayPal (Demo)</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Booking Message -->
+                    <p id="bookingMessage" role="status" aria-live="polite"></p>
+
+
+                    <!-- Submit -->
+                    <button type="submit" class="btn">
+                        Confirm Booking
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>&copy; 2026 CineVerse. All rights reserved.</p>
+
+        <p>Discover stories. Experience cinema.</p>
+
+    </footer>
+
+</body>
+
+</html>

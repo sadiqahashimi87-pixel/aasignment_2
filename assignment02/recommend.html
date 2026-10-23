@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Find movies that match your interests with CineVerse recommendations.">
+
+    <title>Movie Recommendations | CineVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Navigation -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">CineVerse</a>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="recommend.html" aria-current="page">Recommendations</a></li>
+                <li><a href="booking.html">Book Tickets</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Find Your Next Favourite Movie</h1>
+
+                <p>
+                    Tell us what you enjoy, and CineVerse will help you
+                    discover a movie for your next movie night.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recommendation Form -->
+        <section class="section-container">
+
+            <div class="form-container">
+
+                <h2>Personalised Movie Recommendations</h2>
+
+                <form id="recommendationForm">
+
+                    <div class="form-group">
+
+                        <label for="genre">Choose Your Favourite Genre</label>
+
+                        <select id="genre" name="genre" required>
+
+                            <option value="">-- Select a genre --</option>
+                            <option value="romance">Romance</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="fantasy">Fantasy</option>
+                            <option value="animation">Animation</option>
+                            <option value="action">Action</option>
+                            <option value="drama">Drama</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="musical">Musical</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="mood">What kind of movie are you in the mood for?</label>
+
+                        <select id="mood" name="mood" required>
+
+                            <option value="">-- Choose your mood --</option>
+                            <option value="fun">Something fun</option>
+                            <option value="emotional">Something emotional</option>
+                            <option value="magical">Something magical</option>
+                            <option value="exciting">Something exciting</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button type="submit" class="btn">
+                        Find My Movies
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Recommendation Results -->
+            <section id="recommendationResults"
+                class="recommendation-results"
+                aria-live="polite"
+                aria-label="Recommended movies">
+
+                <h2>Your Recommendations</h2>
+
+                <p>
+                    Choose a genre and mood to discover matching movies.
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>&copy; 2026 CineVerse. All rights reserved.</p>
+
+        <p>Discover stories. Experience cinema.</p>
+
+    </footer>
+
+</body>
+
+</html>

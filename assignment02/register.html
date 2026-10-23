@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Create your CineVerse account to explore movies and enjoy your cinema experience.">
+
+    <title>Register | CineVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="css/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">CineVerse</a>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="recommend.html">Recommendations</a></li>
+                <li><a href="booking.html">Book Tickets</a></li>
+                <li><a href="register.html" aria-current="page">Register</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="section-container">
+
+            <div class="form-container">
+
+                <h1>Create Your Account</h1>
+
+                <p>
+                    Join CineVerse to discover movies and plan your next
+                    cinema experience.
+                </p>
+
+                <form id="registerForm" novalidate>
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            autocomplete="name"
+                            required
+                            minlength="2"
+                        >
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Date of Birth -->
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            autocomplete="bday"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                            aria-describedby="passwordHelp"
+                        >
+
+                        <small id="passwordHelp">
+                            Use at least 8 characters.
+                        </small>
+                    </div>
+
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            autocomplete="new-password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-group">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                name="terms"
+                                required
+                            >
+
+                            I agree to the terms and conditions.
+                        </label>
+
+                    </div>
+
+
+                    <!-- Form Message -->
+                    <p id="registerMessage" role="status" aria-live="polite"></p>
+
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn">
+                        Create Account
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CineVerse. All rights reserved.</p>
+        <p>Discover stories. Experience cinema.</p>
+    </footer>
+
+</body>
+
+</html>
